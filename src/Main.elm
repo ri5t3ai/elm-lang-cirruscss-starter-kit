@@ -2,7 +2,7 @@ module Main exposing (..)
 
 import Browser
 import Html exposing (Html, button, div, text, h1, h2, img, span, i)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, style)
 import Html.Events exposing (onClick)
 
 main : Program () Model Msg
@@ -84,8 +84,8 @@ view model =
           
             ]
         ]
-        , div [ class "u-flex u-justify-center u-items-center h-screen" ]
-            [ div [class "hero bg-indigo-600 w-90 h-50 u-justify-center u-items-center" ]
+        , div [ class "u-flex u-justify-center u-items-center h-screen"]
+            [ div [class "hero bg-indigo-600 w-90 h-50 u-justify-center u-items-center", style "box-shadow" "-1px 2px 10px 3px "  ]
                 [ div [ class "hero-body u-flex-column "]
                     [ h1 [ class "headline-1 white" ] [ text "hello world"] 
                     , h2 [ class "font-alt font-light white" ] [ text "this is my elm + cirrus.css starter kit!"]
